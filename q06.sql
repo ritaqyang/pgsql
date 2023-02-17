@@ -1,6 +1,12 @@
-SELECT E.url
-FROM Evaluation E
-WHERE E.evaldate < 2006 OR E.evaldate = 2006
 
-SELECT *
-FROM Evaluation
+
+SELECT DISTINCT E.url
+FROM Evaluation E
+WHERE E.evaldate < '2017-01-01'
+
+
+SELECT W.url, W.title
+FROM Webpages W
+WHERE W.url NOT IN (SELECT DISTINCT E.url
+                    FROM Evaluation E
+                    WHERE E.evaldate < '2017-01-01')
