@@ -21,4 +21,5 @@ SELECT *
 FROM temp
 WHERE temp.numevluations = (SELECT MAX(temp.numevluations)
                             FROM temp)
-ORDER BY url ASC
+ORDER BY 1
+;

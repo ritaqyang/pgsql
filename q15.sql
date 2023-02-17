@@ -6,6 +6,7 @@ SELECT T.topicid, 0 AS numlinks
 FROM Topics T
 WHERE T.topicid NOT IN (SELECT DISTINCT L.topicid
                         FROM Links L)
-ORDER BY topicid
+ORDER BY 1
+;
 
 

@@ -13,5 +13,6 @@ WHERE T.topicid IN (SELECT L.topicid
                     GROUP BY L.topicid
                     HAVING COUNT(DISTINCT L.url) = (SELECT COUNT(DISTINCT W.url)
                                                     FROM Webpages W))
-ORDER BY T.topicid ASC
+ORDER BY 1
+;
 

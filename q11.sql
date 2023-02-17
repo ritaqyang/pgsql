@@ -9,4 +9,5 @@ WHERE W.url IN (SELECT L.url
                 FROM Links L
                 GROUP BY L.url
                 HAVING COUNT(DISTINCT L.topicid) > 1)
-ORDER BY W.url ASC
+ORDER BY 1
+;

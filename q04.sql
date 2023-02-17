@@ -5,4 +5,5 @@ WHERE W.url IN (SELECT L.url
                 WHERE L.topicid IN (SELECT T.topicid
                                     FROM Topics T
                                     WHERE T.name = 'computer science'))
-ORDER BY W.url ASC
+ORDER BY 1
+;

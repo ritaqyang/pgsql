@@ -1,7 +1,9 @@
-SELECT E.url
+SELECT DISTINCT E.url
 FROM Evaluation E
 WHERE E.email = 'x@a.ca'
 EXCEPT
-SELECT E.url
+SELECT DISTINCT E.url
 FROM Evaluation E
 WHERE E.email != 'x@a.ca'
+ORDER BY 1
+;
