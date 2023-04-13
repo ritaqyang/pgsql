@@ -1,0 +1,5 @@
+SELECT DISTINCT E1.URL FROM Evaluation E1
+WHERE NOT EXISTS (SELECT *
+		  FROM Evaluation E2
+		  WHERE E1.URL = E2.URL AND E2.email <> 'x@a.ca')
+ORDER BY E1.URL;
