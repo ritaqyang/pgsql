@@ -1,0 +1,13 @@
+topicid,name,parentid
+1,computer science,
+2,database systems,1
+3,Oracle,2
+4,DB2,2
+5,Web Page,
+6,Biology,
+7,Evolution,6
+8,Human Genetics,6
+9,Research Lab,
+10,Political Science,
+11,Machine Learning,1
+12,Processing and Computations,
